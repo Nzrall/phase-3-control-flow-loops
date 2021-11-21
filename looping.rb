@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 def happy_new_year
   counter = 11
@@ -9,7 +9,7 @@ def happy_new_year
   puts "Happy New Year!"
 end
 
-# No need to modify this code! Use this to implement the fizzbuzz_printer method.
+# # No need to modify this code! Use this to implement the fizzbuzz_printer method.
 def fizzbuzz(num)
   if num % 3 == 0 && num % 5 == 0
     "FizzBuzz"
@@ -24,12 +24,12 @@ end
 
 def fizzbuzz_printer 
   num = 0
-  until num <= 100 
+  while num <= 99 
     num += 1 
-    puts "#{fizzbuzz(num)}"
+    puts fizzbuzz(num)
   end
 end
 
 def reverse_string(str)
-  # your code here
+  "#{str}".chars.reduce { |x, y| y + x}
 end
